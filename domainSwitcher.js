@@ -1,24 +1,29 @@
-var domainA = 'https://www.amazon.co.uk';
-var domainB = 'https://www.amazon.com';
+"use strict";
 
-function domainSwitcher () {
+const domainA = "https://www.amazon.co.uk"; // replace this with primary domain
+const domainB = "https://www.amazon.com"; // replace this with secondary domain
 
-	currentDomain = window.location.origin;
-	currentPath = window.location.pathname;
-	console.log('current domain: ' + currentDomain)
-	console.log('current path: ' + currentPath)
+const currentDomain = window.location.origin;
+const currentPath = window.location.pathname;
 
-	if (currentDomain == domainA) {
-		openNewWindow(domainB);
-	} else if (currentDomain == domainB) {
-		openNewWindow(domainA);
-	} else {
-		console.log('current domain ' + currentDomain + ' is not recognised by DomainSwitcher');
-	}
+function domainToggle() {
+  console.log(`Path: ${currentPath}`);
+  console.log(`Current Domain: ${currentDomain}`);
+
+  if (currentDomain == domainA) {
+    openNewWindow(domainB);
+  } else if (currentDomain == domainB) {
+    openNewWindow(domainA);
+  } else {
+    console.log(
+      `Current domain "${currentDomain}" is not recognised by DomainToggle`
+    );
+  }
 }
 
 function openNewWindow(newDomain) {
-	newWindow = window.open(newDomain + currentPath);
+  console.log(`Updated to Domain: ${newDomain}`);
+  window.open(newDomain + currentPath);
 }
 
-domainSwitcher();
+domainToggle();
