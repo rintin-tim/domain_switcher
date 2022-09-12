@@ -1,4 +1,4 @@
-# domain_switcher
+# domain_toggle
 
 Toggle between the same url ‘slug' on two different domains - without manually (and repetitively) changing the URL in the browser. Running the script in your browser checks the current domain and opens the same slug for the alternate domain. 
 
