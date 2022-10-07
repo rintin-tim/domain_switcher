@@ -19,4 +19,4 @@ For example:
 
 2. To run the script in your browser window go to (`Developer Tools` (`F12`) > `Console` > Then `Copy` & `Paste` the edited script into the console > Press `Enter`) 
 3. To switch between domains when testing, re-run the script in the browser console (if Chrome, go to: `Developer Tools` (`F12`)> `Cursor Up` (&#8593;) > `Enter`)
-4. New domain opens in a new window - the original remains open for comparison
+4. The new domain opens in a new window - the original url remains open for comparison
