@@ -1,12 +1,16 @@
 # domain_toggle
 
-Toggle between the same url ‘slug' on two different domains - without manually (and repetitively) changing the URL in the browser. Running the script in your browser checks the current domain and opens the same slug for the alternate domain. 
+Switch between identical URL paths on two different domains without manually and repetitively changing the URL in the browser.
+This can be useful for comparing webpages across production and staging environments, or comparing pages across different regions.
 
 For example: 
-* Current page: <strong>https://<span></span>test.com</strong><em>/yellow-rubber-ducks</em>
-* New page: <strong>https://<span></span>live.com</strong><em>/yellow-rubber-ducks</em>
 
-To use: 
+| Current page | After toggle |
+| ------------ | -------- |
+| <strong>https://<span></span>test.com</strong><em>/yellow-rubber-ducks</em>|<strong>https://<span></span>live.com</strong><em>/yellow-rubber-ducks</em>|
+
+### Instructions
+
 1. Update the script to include the two domains to toggle:
 
 `var domainA = 'https://www.amazon.co.uk';`
