@@ -3,9 +3,7 @@
 Switch between identical URL paths on two different domains without manually and repetitively changing the URL in the browser.
 This can be useful for comparing webpages across production and staging environments, or comparing pages across different regions.
 
-For example: 
-test.com
-live.com
+For example, if using test.com & live.com:
 
 | Current page | After toggle |
 | ------------ | -------- |
