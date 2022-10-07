@@ -11,7 +11,7 @@ For example, if using test.com & live.com:
 
 ### Instructions
 
-1. Update the script to include the two domains to toggle:
+1. Update the script to include the two domains you wish to toggle between:
 
     `const domainA = 'https://www.amazon.co.uk';`
 
